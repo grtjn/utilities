@@ -9,7 +9,7 @@
 
 	<scm>
     	<developerConnection>scm:git:git@github.com:grtjn/utilities.git</developerConnection>
-	  <tag>utilities-1.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 
     <modules />
@@ -30,6 +30,7 @@
 					<version>2.4</version>
 					<configuration>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
+						<pushChanges>false</pushChanges>
 					</configuration>
 				</plugin>
             </plugins>
