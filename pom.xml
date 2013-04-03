@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>nl.grtjn</groupId>
-    <artifactId>utilities</artifactId>
-    <version>1.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>utilities</name>
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>nl.grtjn</groupId>
+	<artifactId>utilities</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	
+	<name>utilities</name>
 
 	<scm>
-    	<developerConnection>scm:git:git@github.com:grtjn/utilities.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<developerConnection>scm:git:git@github.com:grtjn/utilities.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 
-    <modules />
+	<modules>
+		<module>test</module>
+	</modules>
 
-    <properties />
+	<properties />
 
-    <dependencyManagement>
-        <dependencies />
-   </dependencyManagement>
+	<dependencyManagement>
+		<dependencies />
+	</dependencyManagement>
 
-    <build>
+	<build>
 		<plugins />
-        <pluginManagement>
-            <plugins>
+		<pluginManagement>
+			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-release-plugin</artifactId>
@@ -42,9 +46,10 @@
 						<generateBackupPoms>false</generateBackupPoms>
 					</configuration>
 				</plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
 	<distributionManagement />
 
 </project>
