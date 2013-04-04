@@ -22,7 +22,7 @@ fi
 
 echo ""
 echo "Create release tag v$RELVERSION.."
-git tag v$RELVERSION
+git tag tag-v$RELVERSION
 if [ $? -gt 0 ]; then
 	echo "";
 	echo "Release failed!";

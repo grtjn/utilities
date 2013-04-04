@@ -11,8 +11,8 @@ RELVERSION=$1
 DEVVERSION=$2
 
 echo ""
-echo "Delete release tag v$RELVERSION.."
-git tag -d v$RELVERSION
+echo "Delete release tag tag-v$RELVERSION.."
+git tag -d tag-v$RELVERSION
 #if [ $? -gt 0 ]; then
 #	echo "";
 #	echo "Rollback failed!";
