@@ -21,7 +21,7 @@ if [ $? -gt 0 ]; then
 fi
 
 echo ""
-echo "Create release tag v$RELVERSION.."
+echo "Create release tag tag-v$RELVERSION.."
 git tag tag-v$RELVERSION
 if [ $? -gt 0 ]; then
 	echo "";
