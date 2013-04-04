@@ -121,6 +121,16 @@ if [ $? -gt 0 ]; then
 fi
 
 echo ""
+echo "Add all files to branch.."
+git add .
+if [ $? -gt 0 ]; then
+	echo "";
+	echo "Release failed!";
+	echo "";
+	exit
+fi
+
+echo ""
 echo "Committing dev pom changes.."
 git commit -a -m "Next development version $DEVVERSION"
 if [ $? -gt 0 ]; then
