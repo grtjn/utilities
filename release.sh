@@ -12,8 +12,10 @@ DEVVERSION=$2
 
 echo ""
 echo "Checking if workspace is clean.."
-git status
+git diff --stat --exit-code
 if [ $? -gt 0 ]; then
+	echo "";
+	echo "Workspace is not clean, commit/push first!";
 	echo "";
 	echo "Release failed!";
 	echo "";
