@@ -92,7 +92,7 @@ fi
 
 echo ""
 echo "Pushing release to remote.."
-git push -u origin $RELVERSION
+git push -u origin v$RELVERSION
 if [ $? -gt 0 ]; then
 	echo "";
 	echo "Release failed!";
