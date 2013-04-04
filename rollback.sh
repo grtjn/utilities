@@ -11,7 +11,7 @@ RELVERSION=$1
 DEVVERSION=$2
 
 echo ""
-echo "Delete release tag $RELVERSION.."
+echo "Delete release tag v$RELVERSION.."
 git tag -d v$RELVERSION
 #if [ $? -gt 0 ]; then
 #	echo "";
@@ -31,7 +31,7 @@ if [ $? -gt 0 ]; then
 fi
 
 echo ""
-echo "Delete release branch $RELVERSION.."
+echo "Delete release branch v$RELVERSION.."
 git branch -D v$RELVERSION
 #if [ $? -gt 0 ]; then
 #	echo "";
@@ -41,8 +41,8 @@ git branch -D v$RELVERSION
 #fi
 
 echo ""
-echo "Delete release branch $RELVERSION.."
-git push origin --delete $RELVERSION
+echo "Delete release branch v$RELVERSION.."
+git push origin --delete v$RELVERSION
 #if [ $? -gt 0 ]; then
 #	echo "";
 #	echo "Rollback failed!";
